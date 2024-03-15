@@ -6,6 +6,7 @@ using namespace std;
 
 void exercise_1(string s1, string s2, string s3) {
   // TODO: YOUR CODE HERE
+  
   cout << "a" << endl;
 }
 
@@ -23,6 +24,16 @@ void exercise_4(double n, double a, double b, double x, double y) {
 
 void exercise_5(char character) {
   // TODO: YOUR CODE HERE
+   
+   cout<<"Ingrese un caracter:" <<endl;
+   cin>>caracter;
+    
+    if(caracter <= 90 || caracter >= 60 )
+    {
+        
+        cout<<"Su caracter es valido." <<endl;
+    }
+
 }
 
 void exercise_6(int number) {
