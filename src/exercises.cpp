@@ -64,22 +64,7 @@ void exercise_4(double n, double a, double b, double x, double y) {
 
 void exercise_5(char character) {
   // TODO: YOUR CODE HERE
-<<<<<<< HEAD
-
-=======
-   
-   cout<<"Ingrese un caracter:" <<endl;
-   cin>>caracter;
-    
-    if(caracter <= 90 || caracter >= 60 )
-    {
-        
-        cout<<"Su caracter es valido." <<endl;
-    }
-
->>>>>>> 0d0e32cd1e2291f8302c945a2e048290fe5b8a3b
-}
-
+  }
 void exercise_6(int number) {
   // TODO: YOUR CODE HERE
 }
