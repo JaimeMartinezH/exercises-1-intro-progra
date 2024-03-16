@@ -32,7 +32,7 @@ void exercise_2(double A, double B, double C) {
 #include <cmath>
 #include <limits>
 
-int main() {
+int main()
     double A, B, C;
     std::cin >> A >> B >> C;
     
@@ -49,7 +49,6 @@ int main() {
     }
     
     return 0;
-}
 }
 
 void exercise_3(int a, int b) {
