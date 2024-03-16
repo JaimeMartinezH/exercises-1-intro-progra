@@ -8,49 +8,51 @@ void exercise_1(string s1, string s2, string s3) {
   // TODO: YOUR CODE HERE
   #include <iostream>
 #include <string>
-#include <vector>
-#include <algorithm>
 
-int main() 
-    std::string s1, s2, s3;
-
-    std::cin >> s1 >> s2 >> s3;
-
-    std::vector<std::string> strings = {s1, s2, s3};
-
-    std::sort(strings.begin(), strings.end());
-
-    std::cout << strings[0] << std::endl;
-
-    return 0;
-  
-}
-
-void exercise_2(double A, double B, double C) {
-  // TODO: YOUR CODE HERE
-  #include <iostream>
-#include <cmath>
-#include <limits>
-
-int main()
-    double A, B, C;
-    std::cin >> A >> B >> C;
+int main() {
+    std::string string1, string2, string3;
+    std::cin >> string1 >> string2 >> string3;
     
-    double discriminant = B * B - 4 * A * C;
-    if (discriminant > std::numeric_limits<double>::epsilon()) {
-        double root1 = (-B + std::sqrt(discriminant)) / (2 * A);
-        double root2 = (-B - std::sqrt(discriminant)) / (2 * A);
-        std::cout << root1 << " " << root2 << std::endl;
-    } else if (discriminant > -std::numeric_limits<double>::epsilon() && discriminant < std::numeric_limits<double>::epsilon()) {
-        double root = -B / (2 * A);
-        std::cout << root << std::endl;
-    } else {
-        std::cout << "No real roots" << std::endl;
+    std::string min_string = string1;
+    if (string2 < min_string) {
+        min_string = string2;
+    }
+    if (string3 < min_string) {
+        min_string = string3;
     }
     
+    std::cout << min_string << std::endl;
     return 0;
 }
+  }
+void exercise_2(double A, double B, double C) {
+  // TODO: YOUR CODE HERE
+  if (A == 0) {
+        if (B != 0) {
+            std::cout << -C / B << std::endl; 
+        }
+        
+    } else {
+        double D = B * B - 4 * A * C;
+        if (D > 0) {
+            
+            double x1 = (-B + sqrt(D)) / (2 * A);
+            double x2 = (-B - sqrt(D)) / (2 * A);
+            std::cout << x1 << " " << x2 << std::endl;
+        } else if (D == 0) {
+            
+            double x1 = -B / (2 * A);
+            std::cout << x1 << std::endl;
+        }
+        
+    }
+}
 
+int main() {
+    double A, B, C;
+    std::cin >> A >> B >> C; 
+    return 0;
+}
 void exercise_3(int a, int b) {
   // TODO: YOUR CODE HERE
   
